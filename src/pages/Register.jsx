@@ -20,7 +20,7 @@ const Register = ({ setUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://backend-mern-login.onrender.com/api/users/register", formData);
+      const res = await axios.post("https://backend-login-registerpage-1.onrender.com/api/users/register", formData);
       localStorage.setItem('token', res.data.token);
       console.log(res.data);
       setUser(res.data.user);
