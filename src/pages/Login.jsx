@@ -20,7 +20,7 @@ const Login = ({ setUser }) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://backend-mern-login.onrender.com/api/users/login",
+        "https://backend-login-registerpage-1.onrender.com/api/users/login",
         {
           email,
          password: pass,
