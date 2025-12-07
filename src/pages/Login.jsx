@@ -19,7 +19,14 @@ const Login = ({ setUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://backend-mern-login.onrender.com/api/users/login", formData);
+      const { data } = await axios.post(
+        "https://backend-mern-login.onrender.com/api/users/login",
+        {
+          email,
+         password: pass,
+       }
+   );
+
 
 
 
